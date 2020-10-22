@@ -1,0 +1,193 @@
+:root {
+    --dark-color: rgba(177, 55, 55, 0.5);
+    --medium-color: rgb(175, 53, 53);
+    --light-color: rgba(90, 40, 136, 0.568);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--light-color);
+    padding: 2rem;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, var(--light-color), var(--dark-color)), url('../img/gamingPC.jpg');
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0%, 100% 86%, 0% 100%);
+}
+
+
+
+.text-box {
+     position:absolute;
+     top: 50%;
+     color:rgb(53, 2, 44);
+     left: 80%;
+     transform: translate(-50%, -50%);
+     
+}
+
+.heading-primary {
+text-transform: uppercase;
+
+}
+
+.heading-primary-main {
+ display: block;
+ font-size: 5rem;
+ letter-spacing: 0.5rem;
+ animation-name: moveInLeft;
+ animation-duration: 4s;
+animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+0% {
+    opacity: 0;
+    transform: translate(-100px);
+}
+
+80% {
+    transform: translateX(20px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+}
+
+
+
+.heading-primary-sub {
+display: block;
+font-size: 2rem;
+animation-name: moveInRight;
+animation-duration: 3s;
+animation-timing-function: ease-out;
+}
+
+@keyframes moveInRight {
+0% {
+    opacity: 0;
+transform: translateX(100px);
+}
+80% {
+    transform: translateX(20px);
+}
+
+100% {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+}
+
+#showcase h1 {
+    height: 500px;
+}
+#showcase {
+    font-size: 3.5rem;
+}
+
+
+@keyframes topIn {
+  0% {
+     top: -200px;
+  }  
+
+  100%{
+top: 200px
+  }
+}
+
+.container {
+max-width: 1000px;
+margin: auto;
+padding: 0 2rem;
+}
+
+#content {
+position: relative;
+animation-name: fromLeft;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+top: -65%;
+left: -90%;
+color: black;
+font-size: 200%;
+}
+
+@keyframes fromLeft {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(53, 2, 44);
+    border: 2px solid rgb(53, 2, 44);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    opacity: 0;
+    animation-name: btn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+ transition-property: transform;
+ transition-duration: 3s;
+ position: relative;
+ top: 50%;
+ left: 0%;
+    
+
+}
+
+
+
+.btn:hover{
+    transform: rotateY(180deg);
+}
+
+@keyframes btn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.genshin {
+    position: relative;
+    animation-name: Up;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fromLeft {
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
+}
+
